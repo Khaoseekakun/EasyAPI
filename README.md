@@ -1,11 +1,59 @@
 # EasyAPI
 ตัวอย่าง API ง่ายๆ
 ## วิธีการติดตั้ง
-Requirement :  `Node.js` [**Download**](https://nodejs.org/en)
+**ต้องการ** :  `Node.js` [**Download**](https://nodejs.org/en)
 
-```bat
-  npm install
-```
+เปิด CMD ในโฟลเดอร์ที่โหลดโปรเจค และใช้คำสั่ง
+# ระบบ API สำหรับจัดการข้อมูลผู้ใช้
+
+นี่คือระบบ API ที่ใช้ Express.js และ SQLite เพื่อจัดการข้อมูลผู้ใช้ (users) ซึ่งรองรับการเพิ่มข้อมูลผู้ใช้ใหม่และการค้นหาข้อมูลผู้ใช้จากฐานข้อมูลโดยใช้ชื่อและนามสกุลของผู้ใช้
+
+## วิธีการใช้งาน
+
+1. ติดตั้ง Dependencies
+    ```bash
+    npm install
+    ```
+
+2. เริ่มต้นแอปพลิเคชัน
+    ```bash
+    npm start
+    ```
+
+3. ทดสอบ API
+
+    - **GET /api/users** - ค้นหาข้อมูลผู้ใช้โดยใช้ชื่อและนามสกุล
+        ```bash
+        curl -X GET http://localhost:3000/api/users?firstname=John&lastname=Doe
+        ```
+
+    - **POST /api/users** - เพิ่มข้อมูลผู้ใช้ใหม่
+        ```bash
+        curl -X POST -H "Content-Type: application/json" -d '{"firstname":"John", "lastname":"Doe", "email":"john.doe@example.com"}' http://localhost:3000/api/users
+        ```
+
+## โครงสร้างข้อมูลผู้ใช้
+
+ข้อมูลผู้ใช้ประกอบด้วย:
+- `firstname`: ชื่อจริงของผู้ใช้
+- `lastname`: นามสกุลของผู้ใช้
+- `email`: อีเมลของผู้ใช้
+
+## โครงสร้างโฟลเดอร์
+project
+│ README.md
+│ app.js
+│
+└───database
+│ │ data.db
+│
+└───node_modules
+│ (dependencies)
+
+## คำแนะนำ
+
+- ให้แน่ใจว่าคุณมี Node.js และ npm ติดตั้งในระบบของคุณก่อนการใช้งาน
+- คุณสามารถเปลี่ยนแปลงการเชื่อมต่อฐานข้อมูล SQLite และโครงสร้างข้อมูลผู้ใช้ตามความต้องการของคุณ
 ---
 HTTP กำหนดรหัสสถานะมาตรฐานเหล่านี้ซึ่งสามารถใช้เพื่อถ่ายทอดผลลัพธ์ของคำขอของลูกค้า รหัสสถานะแบ่งออกเป็นห้าประเภท
 ## 1xx ข้อมูล
