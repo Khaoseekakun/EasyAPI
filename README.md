@@ -35,7 +35,7 @@
         curl -X DELETE http://localhost:3000/api/users/1
         ```
     - **ตัวอย่างการใช้ POSTMAN**
-      ![image](https://media.discordapp.net/attachments/855643137716650015/1237767853944471572/image.png?ex=663cd8a4&is=663b8724&hm=436a981c84affd341b541e3adacb44c58435246191ccae136c894abf99af0db9&=&format=webp&quality=lossless)
+      ![image](https://media.discordapp.net/attachments/855643137716650015/1237769209950502963/image.png?ex=663cd9e8&is=663b8868&hm=aff2bdf84e0270c5a96a7488809963e605cb605b3a94f04cd5c154c06aca9aac&=&format=webp&quality=lossless)
 
 ## โครงสร้างข้อมูลผู้ใช้
 
