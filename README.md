@@ -31,6 +31,12 @@
         ```bash
         curl -X POST -H "Content-Type: application/json" -d '{"firstname":"John", "lastname":"Doe", "email":"john.doe@example.com"}' http://localhost:3000/api/users
         ```
+    - **DELETE /api/users/:id** - ลบข้อมูลสมาชิก
+        ```bash
+        curl -X DELETE http://localhost:3000/api/users/1
+        ```
+    - **ตัวอย่างการใช้ POSTMAN**
+      ![image](https://media.discordapp.net/attachments/855643137716650015/1237767853944471572/image.png?ex=663cd8a4&is=663b8724&hm=436a981c84affd341b541e3adacb44c58435246191ccae136c894abf99af0db9&=&format=webp&quality=lossless)
 
 ## โครงสร้างข้อมูลผู้ใช้
 
