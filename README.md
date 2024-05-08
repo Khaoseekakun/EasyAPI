@@ -44,17 +44,6 @@
 - `lastname`: นามสกุลของผู้ใช้
 - `email`: อีเมลของผู้ใช้
 
-## โครงสร้างโฟลเดอร์
-project
-│ README.md
-│ app.js
-│
-└───database
-│ │ data.db
-│
-└───node_modules
-│ (dependencies)
-
 ## คำแนะนำ
 
 - ให้แน่ใจว่าคุณมี Node.js และ npm ติดตั้งในระบบของคุณก่อนการใช้งาน
